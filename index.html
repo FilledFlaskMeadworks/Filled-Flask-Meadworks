@@ -122,11 +122,11 @@
 
         .flavor-description { max-width: 600px; margin: 0 auto; font-size: 1.05rem; }
 
-        /* Order Section */
-        #order { padding: 80px 20px; }
-        #order h2 { text-align: center; margin-bottom: 40px; font-size: 2.5rem; }
+        /* Inquiry Section */
+        #inquiry { padding: 80px 20px; }
+        #inquiry h2 { text-align: center; margin-bottom: 40px; font-size: 2.5rem; }
 
-        .order-container {
+        .inquiry-container {
             max-width: 900px;
             margin: 0 auto;
             display: grid;
@@ -138,7 +138,7 @@
         .form-group { margin-bottom: 20px; }
         label { display: block; margin-bottom: 8px; color: var(--parchment-tan); font-size: 0.95rem; }
         
-        input, select, textarea {
+        input, textarea {
             width: 100%;
             padding: 12px;
             background-color: #1a1a1a;
@@ -147,7 +147,7 @@
             font-family: var(--font-main);
         }
 
-        input:focus, select:focus, textarea:focus { border-color: var(--bronze-tarnish); outline: none; }
+        input:focus, textarea:focus { border-color: var(--bronze-tarnish); outline: none; }
 
         .geo-notice {
             background-color: var(--accent-gray);
@@ -170,7 +170,7 @@
         @media (max-width: 768px) {
             header { padding: 15px 20px; }
             .hero-content h1 { font-size: 2.2rem; }
-            .order-container { grid-template-columns: 1fr; }
+            .inquiry-container { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -179,15 +179,15 @@
     <header>
         <div class="logo">Filled Flask Meadworks</div>
         <nav>
-            <a href="#order" class="btn-bronze" style="padding: 8px 18px; font-size: 0.85rem;">Inquire / Order</a>
+            <a href="#inquiry" class="btn-bronze" style="padding: 8px 18px; font-size: 0.85rem;">Contact & Info</a>
         </nav>
     </header>
 
     <section id="hero">
         <div class="hero-content">
             <h1>Alchemical Elixirs</h1>
-            <p>Small-batch mead crafted with a modernized edge. Strictly North Jersey.</p>
-            <a href="#product" class="btn-bronze">View Batch</a>
+            <p>Small-batch mead crafted with a modernized edge. Based in North Jersey.</p>
+            <a href="#product" class="btn-bronze">View Elixir</a>
         </div>
     </section>
 
@@ -200,15 +200,15 @@
             </div>
             <div class="flavor-description">
                 <p>Our foundational, small-batch release. Pure local honey fermented to perfection, offering a crisp, clean, and timeless profile.</p>
-                <p style="margin-top: 15px;"><em>Available exclusively on an order-over-time basis.</em></p>
+                <p style="margin-top: 15px;"><em>Crafted in limited quantities on a small-scale schedule.</em></p>
             </div>
         </div>
     </section>
 
-    <section id="order">
-        <h2>Order & Inquiry Hub</h2>
-        <div class="order-container">
-            <div class="order-form">
+    <section id="inquiry">
+        <h2>Inquiries & Advice</h2>
+        <div class="inquiry-container">
+            <div class="inquiry-form">
                 <form action="mailto:filledflaskmeadworks@outlook.com" method="post" enctype="text/plain">
                     <div class="form-group">
                         <label>Your Name</label>
@@ -219,40 +219,18 @@
                         <input type="email" name="Email" required>
                     </div>
                     <div class="form-group">
-                        <label>Inquiry Type</label>
-                        <select name="Inquiry_Type" required>
-                            <option value="Order Traditional Honey Mead">Order: Traditional Honey Mead</option>
-                            <option value="General Question / Advice">General Question / Advice</option>
-                        </select>
+                        <label>Your Message, Question, or Advice Request</label>
+                        <textarea name="Message" rows="6" placeholder="Reach out with questions about our process, availability, or general craft advice... " required></textarea>
                     </div>
-                    <div class="form-group">
-                        <label>Quantity / Bottles</label>
-                        <input type="text" name="Quantity" placeholder="e.g., 2 bottles">
-                    </div>
-                    <div class="form-group">
-                        <label>Delivery Timeline / Date</label>
-                        <input type="text" name="Timeline" placeholder="When are you looking to secure this?">
-                    </div>
-                    <div class="form-group">
-                        <label>Fulfillment Preference</label>
-                        <select name="Fulfillment">
-                            <option value="Local Drop-off">Local Drop-off (if close)</option>
-                            <option value="Meet-up After Transfer">Meet-up After Money Transfer</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Additional Notes or Questions</label>
-                        <textarea name="Message" rows="4" placeholder="Let me know your town or any specific questions..."></textarea>
-                    </div>
-                    <button type="submit" class="btn-bronze" style="width: 100%;">Submit Request via Email</button>
+                    <button type="submit" class="btn-bronze" style="width: 100%;">Send Message via Email</button>
                 </form>
             </div>
             
-            <div class="order-details">
-                <h3 style="margin-bottom: 15px;">Local Distribution Only</h3>
-                <p style="color: #ccc; margin-bottom: 20px;">Because we operate on a limited, small-scale schedule, all arrangements are handled directly. Submitting this form opens your mail client to send your specifications right to our inbox.</p>
+            <div class="inquiry-details">
+                <h3 style="margin-bottom: 15px;">About the Craft</h3>
+                <p style="color: #ccc; margin-bottom: 20px;">Filled Flask Meadworks is an independent, small-scale operation. This site serves as an informational hub for those interested in our traditional craft.</p>
                 <div class="geo-notice">
-                    <p><strong>North Jersey Area Only:</strong> We currently restrict sales and fulfillment exclusively to the North Jersey region. No out-of-state shipping.</p>
+                    <p><strong>North Jersey Focus:</strong> We operate strictly within the North Jersey region. Feel free to reach out with any local inquiries.</p>
                 </div>
                 <p style="margin-top: 25px; color: var(--parchment-tan);">Direct Contact:<br><strong>filledflaskmeadworks@outlook.com</strong></p>
             </div>
